@@ -1,0 +1,21 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary & Editor Files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.vscode/
+.idea/
+
+# Local backup
+index.original.html
+
+# Dependencies (if added later)
+node_modules/

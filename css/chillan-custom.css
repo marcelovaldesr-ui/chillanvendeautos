@@ -1,0 +1,608 @@
+/* ==========================================================================
+   CHILLÁN VENDE AUTOS - Custom Brand Styles & Extensions
+   Compraventa de Autos Clásicos y Seleccionados - Chillán, Chile
+   ========================================================================== */
+
+/* 1. BRAND LOGO IN NAVIGATION */
+.navigation-bar .vanguard-container .vanguard-nav-logo {
+  background-image: url('../images/chillan-logo-nav.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 145px !important;
+  height: 98px !important;
+  top: 8px !important;
+  transition: all 0.35s ease-in-out !important;
+}
+
+.navigation-bar.compress-nav .vanguard-container .vanguard-nav-logo,
+.navigation-bar .vanguard-container .vanguard-nav-logo.small {
+  top: 3px !important;
+  width: 82px !important;
+  height: 58px !important;
+}
+
+@media (max-width: 991px) {
+  .navigation-bar .vanguard-container .vanguard-nav-logo {
+    top: 5px !important;
+    width: 85px !important;
+    height: 54px !important;
+  }
+}
+
+/* 2. SECTION BACKGROUNDS (FALLBACK & LOCAL ASSETS) */
+.hp-section-row.find {
+  background-image: url('../images/mustang-bg-m-bad9351e6ecd413ccca04f01d505806e.jpg') !important;
+  background-size: cover !important;
+  background-position: center right !important;
+}
+
+.hp-section-row.sell {
+  background-image: url('../images/chevelle-bg-m-f86bdb1dca85f81f01a3b59954fecbe3.jpg') !important;
+  background-size: cover !important;
+  background-position: center right !important;
+}
+
+.hp-section-row.reviews {
+  background-image: url('../images/reviews-bg-m-7b5085d3b649e06f6f4e3995b59207ba.jpg') !important;
+  background-size: cover !important;
+}
+
+.hp-section-row.about {
+  background-image: url('../images/about-video-bg-fdfa24c8e8f0465867ed625b5a19ca4f.jpg') !important;
+  background-size: cover !important;
+  background-position: center bottom !important;
+}
+
+.hp-section-row.news-floor {
+  background-image: url('../images/car_bg-6dd2121bd8e216aea8c6fb5f91027f47.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* 3. HERO ENHANCEMENTS */
+.cycler-box .text-box h1.shadow {
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0,0,0,0.8);
+  letter-spacing: 1px;
+}
+
+.cycler-box .text-box {
+  z-index: 10;
+}
+
+/* 4. SHOWROOM & INVENTORY SHOWCASE */
+.cva-inventory-section {
+  width: 100%;
+  background: #0d0d0d;
+  padding: 60px 20px 80px 20px;
+  position: relative;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.cva-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.cva-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cva-badge-pill {
+  display: inline-block;
+  background: #ce1f26;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.cva-header h2 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 56px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+  line-height: 1;
+}
+
+.cva-header p {
+  color: #aaa;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Filter and Search Bar */
+.cva-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 35px;
+  background: #181818;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #2e2e2e;
+}
+
+.cva-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cva-pill-btn {
+  background: #252525;
+  color: #e0e0e0;
+  border: 1px solid #3d3d3d;
+  padding: 9px 18px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.cva-pill-btn:hover,
+.cva-pill-btn.active {
+  background: #ce1f26;
+  border-color: #ce1f26;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(206, 31, 38, 0.4);
+}
+
+.cva-search-wrap {
+  position: relative;
+  min-width: 280px;
+}
+
+.cva-search-wrap input {
+  width: 100%;
+  background: #252525;
+  border: 1px solid #3d3d3d;
+  color: #fff;
+  padding: 10px 40px 10px 16px;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cva-search-wrap input:focus {
+  border-color: #ce1f26;
+}
+
+.cva-search-wrap svg {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: #888;
+  pointer-events: none;
+}
+
+/* Car Cards Grid */
+.cva-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 30px;
+}
+
+.cva-card {
+  background: #151515;
+  border: 1px solid #282828;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cva-card:hover {
+  transform: translateY(-6px);
+  border-color: #ce1f26;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8), 0 0 15px rgba(206, 31, 38, 0.25);
+}
+
+.cva-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #000;
+}
+
+.cva-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cva-card:hover .cva-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+.cva-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #ce1f26;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.cva-badge.featured {
+  background: #e67e22;
+}
+
+.cva-card-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cva-card-year {
+  color: #ce1f26;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.cva-card-title {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.cva-card-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+
+.cva-spec-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cva-spec-label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+}
+
+.cva-spec-val {
+  color: #e6e6e6;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cva-card-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #282828;
+  margin-bottom: 16px;
+}
+
+.cva-price-clp {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 32px;
+  color: #ce1f26;
+  letter-spacing: 1px;
+}
+
+.cva-price-usd {
+  font-size: 13px;
+  color: #888;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+}
+
+.cva-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cva-btn-detail {
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.cva-btn-detail:hover {
+  background: #ce1f26;
+  border-color: #ce1f26;
+  color: #fff;
+}
+
+.cva-btn-wsp {
+  background: #1f7a37;
+  color: #fff;
+  border: 1px solid #27ae60;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.cva-btn-wsp:hover {
+  background: #27ae60;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(39, 174, 96, 0.4);
+}
+
+/* 5. FLOATING WHATSAPP BUTTON */
+.cva-float-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 12px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none !important;
+}
+
+.cva-float-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 18px rgba(37, 211, 102, 0.6);
+  color: #fff;
+}
+
+.cva-float-whatsapp svg {
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+
+/* 6. SOCIAL FEED GRID (EN NUESTRAS REDES) */
+.cva-social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cva-social-post {
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.cva-social-post:hover {
+  transform: translateY(-4px);
+  border-color: #ce1f26;
+}
+
+.cva-social-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cva-social-caption {
+  padding: 15px;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cva-social-tag {
+  color: #ce1f26;
+  font-weight: 700;
+  display: block;
+  margin-top: 8px;
+}
+
+/* 7. CAR DETAIL MODAL */
+#cva-car-modal .modal-dialog {
+  max-width: 850px;
+}
+
+#cva-car-modal .modal-content {
+  background: #141414;
+  border: 1px solid #ce1f26;
+  border-radius: 8px;
+  color: #fff;
+}
+
+#cva-car-modal .modal-header {
+  border-bottom: 1px solid #333;
+  padding: 20px;
+  position: relative;
+}
+
+#cva-car-modal .modal-header h3 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 36px;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#cva-car-modal .modal-body {
+  padding: 24px;
+}
+
+.cva-modal-gallery {
+  width: 100%;
+  height: 380px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 20px;
+}
+
+.cva-modal-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cva-modal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.cva-modal-table th,
+.cva-modal-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #282828;
+  font-size: 15px;
+}
+
+.cva-modal-table th {
+  color: #999;
+  text-align: left;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.cva-modal-table td {
+  color: #fff;
+  font-weight: 600;
+}
+
+.cva-modal-footer-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Newsletter Input Styling */
+.cva-newsletter-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 480px;
+}
+
+.cva-newsletter-box input {
+  flex: 1;
+  background: #222;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.cva-newsletter-box input:focus {
+  border-color: #ce1f26;
+}
+
+.cva-newsletter-box button {
+  background: #ce1f26;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cva-newsletter-box button:hover {
+  background: #a90707;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cva-grid {
+    grid-template-columns: 1fr;
+  }
+  .cva-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cva-search-wrap {
+    min-width: 100%;
+  }
+  .cva-modal-gallery {
+    height: 240px;
+  }
+  .cva-modal-footer-btns {
+    flex-direction: column;
+  }
+}

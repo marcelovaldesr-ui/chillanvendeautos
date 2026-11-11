@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="es-CL"><head>
+<meta charset="utf-8">
+<meta content="initial-scale=1,maximum-scale=5,user-scalable=yes" name="viewport">
+<title>Financiamiento Automotriz | Chillán Vende Autos</title>
+<meta content="Simula tu crédito automotriz para autos clásicos y camionetas en Chillán Vende Autos. Planes flexibles y asesoría en Chillán, Chile." name="description">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" href="../images/favicon.png">
+<meta content="#000000" name="theme-color">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" media="all" href="../css/application-0290794144b5ae98ce8b2741a3038783.css">
+<link rel="stylesheet" media="all" href="../css/chillan-custom.css">
+
+<style>
+.cva-page-banner {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('../images/mustang-bg-m-bad9351e6ecd413ccca04f01d505806e.jpg') center/cover;
+  padding: 160px 20px 60px 20px;
+  text-align: center;
+  border-bottom: 2px solid #ce1f26;
+}
+.cva-page-banner h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+.cva-page-banner p {
+  color: #bbb;
+  font-size: 20px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.cva-calc-box {
+  max-width: 850px;
+  margin: 40px auto 80px auto;
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 40px;
+  color: #fff;
+}
+.cva-calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 25px;
+}
+.cva-calc-result {
+  background: #222;
+  border: 1px solid #ce1f26;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cva-calc-result-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  color: #ce1f26;
+  line-height: 1;
+  margin: 15px 0;
+}
+</style>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/application-dd0b4217b93e1f67fc1bb25dbcafcc38.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+  <!-- NAVIGATION BAR -->
+  <div class="navigation-bar">
+    <div class="vanguard-container">
+      <a title="Chillán Vende Autos" class="vanguard-nav-logo" href="../"></a>
+      <div class="logo-bg"></div>
+      
+      <div class="navigation-top-row">
+        <div class="top-left">
+          <div class="ask-question">
+            <a title="Consultar" class="vanguard-question" href="../contact">¿Dudas? Escríbenos</a>
+          </div>
+          <div class="mobile-phone">
+            <a title="Llámanos" href="tel:+56994749513">Llámanos</a>
+          </div>
+        </div>
+        <div class="top-right">
+          <div class="phone-number">
+            <a title="Llamar" class="vanguard-phone" href="tel:+56994749513">
+              <span>+56 9 9474 9513</span>
+            </a>
+          </div>
+          <div class="mobile-menu-btn">
+            <a title="Menú" href="#">Menú</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-bottom-row">
+        <ul class="navigation-link-bar">
+          <li><a href="../">Inicio</a></li>
+          <li><a href="../inventory">Inventario</a></li>
+          <li><a href="../sell-us-your-car">Vende Tu Auto</a></li>
+          <li class="current"><a href="../financing">Financiamiento</a></li>
+          <li><a href="../about-us">Nosotros</a></li>
+          <li><a href="../contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="cva-page-banner">
+      <h1>Financiamiento Automotriz</h1>
+      <p>Haz realidad el sueño de tener tu clásico. Trabajamos con opciones de crédito automotriz, cheques, tarjetas bancarias y pagos mixtos.</p>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div class="cva-calc-box">
+      <h2 style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#fff; text-align:center; margin:0 0 10px 0;">Simulador de Cuota Mensual</h2>
+      <p style="text-align:center; color:#aaa; margin-bottom: 25px;">Ajusta los valores para estimar tu cuota referencial en pesos chilenos ($ CLP).</p>
+
+      <div class="cva-calc-grid">
+        <div>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label style="color:#ce1f26; font-weight:bold; font-family:'Rajdhani',sans-serif; font-size:16px;">VALOR DEL VEHÍCULO ($ CLP)</label>
+            <input type="number" id="calc-car-price" value="28500000" step="500000" style="width:100%; background:#252525; border:1px solid #444; color:#fff; padding:12px; border-radius:4px; font-size:18px;">
+          </div>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label style="color:#ce1f26; font-weight:bold; font-family:'Rajdhani',sans-serif; font-size:16px;">PIE INICIAL (MÍNIMO 20%)</label>
+            <input type="number" id="calc-down-payment" value="5700000" step="500000" style="width:100%; background:#252525; border:1px solid #444; color:#fff; padding:12px; border-radius:4px; font-size:18px;">
+          </div>
+          <div class="form-group">
+            <label style="color:#ce1f26; font-weight:bold; font-family:'Rajdhani',sans-serif; font-size:16px;">PLAZO EN CUOTAS</label>
+            <select id="calc-term" style="width:100%; background:#252525; border:1px solid #444; color:#fff; padding:12px; border-radius:4px; font-size:18px;">
+              <option value="12">12 Meses</option>
+              <option value="24" selected>24 Meses</option>
+              <option value="36">36 Meses</option>
+              <option value="48">48 Meses</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cva-calc-result">
+          <span style="color:#aaa; font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:1px;">Cuota Estimada Mensual:</span>
+          <div class="cva-calc-result-number" id="calc-result-val">$1.125.000 CLP</div>
+          <span style="color:#888; font-size:13px; margin-bottom:20px;">*Tasa referencial sujeta a evaluación crediticia.</span>
+          <a href="https://wa.me/56994749513?text=Hola%20Chill%C3%A1n%20Vende%20Autos!%20Quiero%20solicitar%20evaluaci%C3%B3n%20de%20financiamiento." target="_blank" rel="noopener" class="cva-btn-wsp" style="padding:14px; font-size:16px;">
+            Solicitar Evaluación por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <div class="vanguard-wrap footer-top-row">
+      <div class="footer-links">
+        <ul class="navigation-link-bar">
+          <li><a href="../">Inicio</a></li>
+          <li><a href="../inventory">Inventario</a></li>
+          <li><a href="../sell-us-your-car">Vende Tu Auto</a></li>
+          <li><a href="../financing">Financiamiento</a></li>
+          <li><a href="../about-us">Nosotros</a></li>
+          <li><a href="../contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-address">
+        <div class="max-width">
+          <div class="col-1">
+            <img alt="Chillán Vende Autos" src="../images/chillan-logo-nav.png" style="max-height: 85px; width: auto;">
+          </div>
+          <div class="col-2">
+            <span class="line-1">Longitudinal Sur Km 402</span>
+            <span class="line-2">Chillán, Región de Ñuble, Chile</span>
+            <span class="bp">•</span>
+            <span class="footer-phone"><a href="tel:+56994749513">Teléfono: +56 9 9474 9513</a></span>
+            <div class="privacy-row">
+              <span>© 2026 Chillán Vende Autos. Compraventa de Autos Clásicos y Camionetas. Chillán, Chile.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/56994749513?text=Hola%20Chill%C3%A1n%20Vende%20Autos!%20Consulta%20sobre%20financiamiento." target="_blank" rel="noopener" class="cva-float-whatsapp" title="WhatsApp (+56 9 9474 9513)">
+  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+function updateCalc() {
+  var price = parseFloat($('#calc-car-price').val()) || 0;
+  var down = parseFloat($('#calc-down-payment').val()) || 0;
+  var term = parseInt($('#calc-term').val()) || 24;
+  var balance = Math.max(0, price - down);
+  var monthlyRate = 0.0125; // 1.25% tasa mensual referencial
+  var payment = balance * (monthlyRate * Math.pow(1 + monthlyRate, term)) / (Math.pow(1 + monthlyRate, term) - 1);
+  if (isNaN(payment) || payment <= 0) payment = 0;
+  $('#calc-result-val').text('$' + Math.round(payment).toLocaleString('es-CL') + ' CLP');
+}
+$('#calc-car-price, #calc-down-payment, #calc-term').on('input change', updateCalc);
+updateCalc();
+</script>
+</body></html>
